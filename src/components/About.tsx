@@ -20,14 +20,13 @@ function About() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2, delay: 0.05 * idx }}
           >
-            <span className="transition-all duration-75 hover:text-primary-dark hover:font-extrabold">
+            <span className="transition-all duration-75 hover:text-primary-dark">
               {l}
             </span>
           </motion.span>
         ))}
       </h1>
 
-      {/* <div className="border border-black rounded-full w-52 h-52 ring-4"></div> */}
       <Picture />
 
       <div className="flex gap-4 px-4 py-3 text-3xl bg-gray-100 rounded-full">

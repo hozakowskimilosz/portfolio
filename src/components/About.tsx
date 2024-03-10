@@ -9,9 +9,9 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center h-screen gap-10"
+      className="flex flex-col items-center justify-center h-screen gap-10 py-12 md:py-4"
     >
-      <h1 className="text-6xl font-medium tracking-wider text-primary">
+      <h1 className="px-3 py-1 text-4xl font-medium tracking-widest text-center transition-colors rounded-sm bg-gradient-to-br from-indigo-300 via-violet-300 to-purple-300 text-primary">
         {name.split("").map((l, idx) => (
           <motion.span
             key={idx}
@@ -29,7 +29,7 @@ function About() {
 
       <Picture />
 
-      <div className="flex gap-4 px-4 py-3 text-3xl bg-gray-100 rounded-full">
+      <div className="flex gap-4 px-4 py-3 text-2xl bg-gray-100 rounded-full">
         <a href="https://github.com/hozakowskimilosz" target="blank">
           <VscGithubInverted className="text-gray-400 transition-colors duration-150 cursor-pointer hover:text-gray-900" />
         </a>
@@ -41,8 +41,10 @@ function About() {
         </a>
       </div>
 
-      <div className="flex flex-col gap-4 px-12 py-8 bg-gray-100 rounded-md w-[30rem]">
-        <h2 className="text-3xl font-semibold">About me</h2>
+      <div className="flex flex-col gap-4 px-12 py-8 mx-8 bg-gray-100 rounded-md md:w-[40rem]">
+        <h2 className="text-2xl font-semibold transition-transform hover:translate-x-1 text-primary-light">
+          About me
+        </h2>
         <p className="font-light text-justify">
           My name is Miłosz Hozakowski, and I am currently finishing my
           programming technician degree in Zespół Szkół Łączności in Poznań

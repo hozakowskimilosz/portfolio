@@ -46,14 +46,14 @@ function Picture() {
         rotateX,
         rotateY,
       }}
-      className="relative w-56 h-56 rounded-full bg-gradient-to-br from-indigo-300 to-violet-300"
+      className="relative rounded-full size-24 sm:size-44 bg-gradient-to-br from-indigo-300 to-violet-300"
     >
       <div
         style={{
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute grid bg-white rounded-full shadow-lg inset-4 place-content-center"
+        className="absolute grid bg-white rounded-full shadow-lg inset-2 place-content-center"
       >
         <img
           src="src/assets/picture.jpg"

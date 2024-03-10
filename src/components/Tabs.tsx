@@ -11,7 +11,7 @@ function Tabs() {
       const sections = tabs.map((tab) =>
         document.getElementById(tab.toLowerCase())
       );
-      const scrollPosition = window.scrollY * 1.5;
+      const scrollPosition = window.scrollY * 1.1;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         if (sections[i]!.offsetTop <= scrollPosition) {
@@ -29,7 +29,7 @@ function Tabs() {
   }, []);
 
   return (
-    <div className="fixed top-0 z-10 flex flex-wrap items-center justify-center w-full gap-2 py-3 bg-slate-300/10 backdrop-blur-sm">
+    <div className="fixed top-0 z-10 flex flex-wrap items-center justify-center w-full gap-2 py-3 bg-slate-200/10 backdrop-blur-sm">
       {tabs.map((tab) => (
         <Tab
           text={tab}

@@ -42,7 +42,7 @@ function About() {
       </div>
 
       <div className="mx-8 flex flex-col gap-4 rounded-md bg-gray-100 px-12 py-8 md:w-[40rem]">
-        <h2 className="text-2xl font-semibold text-primary-light transition-transform hover:translate-x-1">
+        <h2 className="text-2xl font-semibold text-primary-light transition-all hover:my-1 hover:text-3xl">
           About me
         </h2>
         <p className="text-justify font-light">

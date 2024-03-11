@@ -1,5 +1,5 @@
-import { motion, useAnimation, useInView } from "framer-motion";
-import { ReactNode, useEffect, useRef } from "react";
+import { ReactNode } from "react";
+import Reveal from "./ui/Reveal";
 
 function Skills() {
   const skills = [
@@ -14,18 +14,6 @@ function Skills() {
     "FramerMotion",
   ];
 
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    } else {
-      mainControls.start("hidden");
-    }
-  }, [isInView, mainControls]);
-
   return (
     <div
       id="skills"
@@ -38,18 +26,9 @@ function Skills() {
 
         <div className="flex flex-wrap gap-4">
           {skills.map((skill, idx) => (
-            <motion.div
-              ref={ref}
-              variants={{
-                hidden: { opacity: 0, x: -300 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              initial="hidden"
-              animate={mainControls}
-              transition={{ duration: 0.5, delay: 0.1 * idx }}
-            >
+            <Reveal idx={idx}>
               <Skill>{skill}</Skill>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>

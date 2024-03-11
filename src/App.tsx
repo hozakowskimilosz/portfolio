@@ -13,7 +13,7 @@ function App() {
     <div className="divide-y-2 font-kanit">
       <motion.div
         style={{ scaleX: scrollYProgress }}
-        className="fixed top-[50px] left-0 right-0 h-[5px] bg-primary transform z-20 transition-transform"
+        className="fixed left-0 right-0 top-[50px] z-20 h-[5px] bg-primary"
       />
       <Tabs />
       <About />

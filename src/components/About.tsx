@@ -9,13 +9,13 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center h-screen gap-10 py-12 md:py-4"
+      className="flex h-screen flex-col items-center justify-center gap-10"
     >
-      <h1 className="px-3 py-1 text-4xl font-medium tracking-widest text-center transition-colors rounded-sm bg-gradient-to-br from-indigo-300 via-violet-300 to-purple-300 text-primary">
+      <h1 className="rounded-sm bg-gradient-to-br from-indigo-300 via-violet-300 to-purple-300 px-3 py-1 text-center text-4xl font-medium tracking-widest text-primary transition-colors">
         {name.split("").map((l, idx) => (
           <motion.span
             key={idx}
-            className="transition-all duration-100 cursor-default "
+            className="cursor-default transition-all duration-100 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2, delay: 0.05 * idx }}
@@ -29,23 +29,23 @@ function About() {
 
       <Picture />
 
-      <div className="flex gap-4 px-4 py-3 text-2xl bg-gray-100 rounded-full">
+      <div className="flex gap-4 rounded-full bg-gray-100 px-4 py-3 text-2xl">
         <a href="https://github.com/hozakowskimilosz" target="blank">
-          <VscGithubInverted className="text-gray-400 transition-colors duration-150 cursor-pointer hover:text-gray-900" />
+          <VscGithubInverted className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
         </a>
         <a
           href="https://www.linkedin.com/in/mi%C5%82osz-hozakowski-629442266/"
           target="blank"
         >
-          <FaLinkedin className="text-gray-400 transition-colors duration-150 cursor-pointer hover:text-gray-900" />
+          <FaLinkedin className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
         </a>
       </div>
 
-      <div className="flex flex-col gap-4 px-12 py-8 mx-8 bg-gray-100 rounded-md md:w-[40rem]">
-        <h2 className="text-2xl font-semibold transition-transform hover:translate-x-1 text-primary-light">
+      <div className="mx-8 flex flex-col gap-4 rounded-md bg-gray-100 px-12 py-8 md:w-[40rem]">
+        <h2 className="text-2xl font-semibold text-primary-light transition-transform hover:translate-x-1">
           About me
         </h2>
-        <p className="font-light text-justify">
+        <p className="text-justify font-light">
           My name is Miłosz Hozakowski, and I am currently finishing my
           programming technician degree in Zespół Szkół Łączności in Poznań
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolor.

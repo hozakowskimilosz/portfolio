@@ -9,7 +9,7 @@ function Tabs() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = tabs.map((tab) =>
-        document.getElementById(tab.toLowerCase())
+        document.getElementById(tab.toLowerCase()),
       );
       const scrollPosition = window.scrollY * 1.1;
 
@@ -29,7 +29,7 @@ function Tabs() {
   }, []);
 
   return (
-    <div className="fixed top-0 z-10 flex flex-wrap items-center justify-center w-full gap-2 py-3 bg-slate-200/10 backdrop-blur-sm">
+    <div className="fixed top-0 z-10 flex w-full flex-wrap items-center justify-center gap-2 bg-slate-200/10 py-3 backdrop-blur-sm">
       {tabs.map((tab) => (
         <Tab
           text={tab}
@@ -56,8 +56,8 @@ function Tab({ text, selected, setSelected }: TabProps) {
         className={`${
           selected
             ? "text-white"
-            : "text-slate-800 hover:text-slate-200 hover:bg-primary-light"
-        } text-sm transition-colors px-2.5 py-0.5 rounded-md relative`}
+            : "text-slate-800 hover:bg-primary-light hover:text-slate-200"
+        } relative rounded-md px-2.5 py-0.5 text-sm transition-colors`}
       >
         <span className="relative z-10">{text}</span>
         {selected && (

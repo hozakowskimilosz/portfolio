@@ -2,7 +2,7 @@ import EncryptButton from "./ui/EncryptButton";
 
 function Experience() {
   return (
-    <div id="experience" className="flex items-center justify-center h-screen">
+    <div id="experience" className="flex h-screen items-center justify-center">
       <EncryptButton />
     </div>
   );

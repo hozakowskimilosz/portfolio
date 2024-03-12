@@ -9,29 +9,42 @@ interface RevealProps {
 function Reveal({ children, idx }: RevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref);
+
   const mainControls = useAnimation();
+  const slideControls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
-    } else {
-      mainControls.start("hidden");
+      slideControls.start("visible");
     }
   }, [isInView, mainControls]);
 
   return (
-    <motion.div
-      ref={ref}
-      variants={{
-        hidden: { opacity: 0, x: -300 },
-        visible: { opacity: 1, x: 0 },
-      }}
-      initial="hidden"
-      animate={mainControls}
-      transition={{ duration: 0.5, delay: idx ? 0.1 * idx : 0.25 }}
-    >
-      {children}
-    </motion.div>
+    <div className="relative">
+      <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, scale: 0.7 },
+          visible: { opacity: 1, scale: 1 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: idx ? 0.1 * idx : 0.25 }}
+      >
+        {children}
+      </motion.div>
+      <motion.div
+        variants={{ hidden: { left: 0 }, visible: { left: "100%" } }}
+        initial="hidden"
+        animate={slideControls}
+        transition={{
+          duration: 0.5,
+          ease: "easeIn",
+        }}
+        className="absolute bottom-[4px] left-0 right-0 top-[4px] z-20 bg-primary"
+      ></motion.div>
+    </div>
   );
 }
 

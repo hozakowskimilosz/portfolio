@@ -25,8 +25,8 @@ function Skills() {
         </h2>
 
         <div className="flex flex-wrap gap-4">
-          {skills.map((skill, idx) => (
-            <Reveal idx={idx}>
+          {skills.map((skill) => (
+            <Reveal>
               <Skill>{skill}</Skill>
             </Reveal>
           ))}

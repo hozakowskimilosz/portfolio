@@ -5,6 +5,9 @@ import Picture from "./ui/Picture";
 
 function About() {
   const name = "Miłosz Hozakowski.";
+  const githubLink = "https://github.com/hozakowskimilosz";
+  const linkedInLink =
+    "https://www.linkedin.com/in/mi%C5%82osz-hozakowski-629442266/";
 
   return (
     <div
@@ -30,13 +33,10 @@ function About() {
       <Picture />
 
       <div className="flex gap-4 rounded-full bg-gray-100 px-4 py-3 text-2xl">
-        <a href="https://github.com/hozakowskimilosz" target="blank">
+        <a href={githubLink} target="blank">
           <VscGithubInverted className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/mi%C5%82osz-hozakowski-629442266/"
-          target="blank"
-        >
+        <a href={linkedInLink} target="blank">
           <FaLinkedin className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
         </a>
       </div>

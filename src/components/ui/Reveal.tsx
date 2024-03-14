@@ -43,7 +43,7 @@ function Reveal({ children, idx }: RevealProps) {
           ease: "easeIn",
           delay: idx ? idx * 0.08 : 0,
         }}
-        className="absolute bottom-[4px] left-0 right-0 top-[4px] z-20 rounded-full bg-primary"
+        className="absolute bottom-[4px] left-0 right-0 top-[4px] z-20 bg-primary"
       ></motion.div>
     </div>
   );

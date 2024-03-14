@@ -20,7 +20,7 @@ function Skills() {
       className="flex h-screen flex-col items-center justify-center px-5"
     >
       <div className="flex flex-col gap-4 md:w-[40rem]">
-        <h2 className="text-6xl font-bold transition-all hover:text-7xl hover:text-primary-light">
+        <h2 className="text-6xl font-bold transition-all hover:tracking-wider hover:text-primary-light">
           Skills
         </h2>
 
@@ -42,7 +42,7 @@ interface SkillProps {
 
 function Skill({ children }: SkillProps) {
   return (
-    <div className="rounded-full border border-transparent bg-gray-100 px-8 py-3 text-2xl transition-all hover:scale-105 hover:border-primary">
+    <div className="rounded-md border-2 border-transparent bg-gray-100 px-8 py-3 text-2xl transition-all hover:scale-105 hover:border-primary">
       {children}
     </div>
   );

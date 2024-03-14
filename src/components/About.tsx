@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaLinkedin } from "react-icons/fa6";
 import Picture from "./ui/Picture";
+import Reveal from "./ui/Reveal";
 
 function About() {
   const name = "Miłosz Hozakowski.";
@@ -41,18 +42,21 @@ function About() {
         </a>
       </div>
 
-      <div className="mx-8 flex flex-col gap-4 rounded-md bg-gray-100 px-12 py-8 md:w-[40rem]">
-        <h2 className="text-2xl font-semibold text-primary-light transition-all hover:my-1 hover:text-3xl">
+      <div className="flex flex-col gap-4 md:w-[40rem]">
+        <h2 className="text-6xl font-bold transition-all hover:tracking-wider hover:text-primary-light">
           About me
         </h2>
-        <p className="text-justify font-light">
-          My name is Miłosz Hozakowski, and I am currently finishing my
-          programming technician degree in Zespół Szkół Łączności in Poznań
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolor.
-          Quidem corporis, excepturi iure blanditiis, consequuntur tempore
-          molestiae, reprehenderit modi illum unde asperiores ipsam aut fugiat
-          tenetur sapiente ex itaque.
-        </p>
+
+        <Reveal>
+          <p className="rounded-md border-2 border-transparent bg-gray-100 px-7 py-4 text-justify font-light transition-all hover:border-primary md:w-[40rem]">
+            My name is Miłosz Hozakowski, and I am currently finishing my
+            programming technician degree in Zespół Szkół Łączności in Poznań
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+            dolor. Quidem corporis, excepturi iure blanditiis, consequuntur
+            tempore molestiae, reprehenderit modi illum unde asperiores ipsam
+            aut fugiat tenetur sapiente ex itaque.
+          </p>
+        </Reveal>
       </div>
     </div>
   );

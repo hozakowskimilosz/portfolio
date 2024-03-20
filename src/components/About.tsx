@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaLinkedin } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+
 import Picture from "./ui/Picture";
 import Reveal from "./ui/Reveal";
 
@@ -13,7 +15,7 @@ function About() {
   return (
     <div
       id="about"
-      className="flex h-screen flex-col items-center justify-center gap-10"
+      className="dark flex h-screen flex-col items-center justify-center gap-10 dark:bg-neutral-600"
     >
       <h1 className="rounded-sm bg-gradient-to-br from-indigo-300 via-violet-300 to-purple-300 px-3 py-1 text-center text-4xl font-medium tracking-widest text-primary transition-colors">
         {name.split("").map((l, idx) => (
@@ -24,21 +26,22 @@ function About() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2, delay: 0.05 * idx }}
           >
-            <span className="transition-all duration-75 hover:text-primary-dark">
-              {l}
-            </span>
+            <span>{l}</span>
           </motion.span>
         ))}
       </h1>
 
       <Picture />
 
-      <div className="flex gap-4 rounded-full bg-gray-100 px-4 py-3 text-2xl">
+      <div className="flex gap-2 rounded-full bg-gray-100 px-4 py-3 text-2xl">
         <a href={githubLink} target="blank">
           <VscGithubInverted className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
         </a>
         <a href={linkedInLink} target="blank">
           <FaLinkedin className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
+        </a>
+        <a href="mailto:mhozakowski@gmail.com">
+          <SiGmail className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
         </a>
       </div>
 

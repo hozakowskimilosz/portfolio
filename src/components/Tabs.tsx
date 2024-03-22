@@ -29,7 +29,7 @@ function Tabs() {
   }, []);
 
   return (
-    <div className="fixed top-0 z-10 flex w-full flex-wrap items-center justify-center gap-2 bg-slate-200/10 py-3 backdrop-blur-sm">
+    <div className="fixed top-0 z-10 flex w-full flex-wrap items-center justify-center gap-2 bg-neutral-50/70 py-3 backdrop-blur-sm">
       {tabs.map((tab) => (
         <Tab
           text={tab}

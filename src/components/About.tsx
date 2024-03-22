@@ -15,7 +15,7 @@ function About() {
   return (
     <div
       id="about"
-      className="dark flex h-screen flex-col items-center justify-center gap-10 dark:bg-neutral-600"
+      className="flex h-screen flex-col items-center justify-center gap-10"
     >
       <h1 className="rounded-sm bg-gradient-to-br from-indigo-300 via-violet-300 to-purple-300 px-3 py-1 text-center text-4xl font-medium tracking-widest text-primary transition-colors">
         {name.split("").map((l, idx) => (
@@ -52,12 +52,13 @@ function About() {
 
         <Reveal>
           <p className="rounded-md border-2 border-transparent bg-gray-100 px-7 py-4 text-justify font-light transition-all hover:border-primary md:w-[40rem]">
-            My name is Miłosz Hozakowski, and I am currently finishing my
-            programming technician degree in Zespół Szkół Łączności in Poznań
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-            dolor. Quidem corporis, excepturi iure blanditiis, consequuntur
-            tempore molestiae, reprehenderit modi illum unde asperiores ipsam
-            aut fugiat tenetur sapiente ex itaque.
+            Welcome! I'm Miłosz Hozakowski, a web developer, currently on the
+            verge of completing my programming technician degree at Zespół Szkół
+            Łączności in Poznań. Fueled by curiosity and a passion for
+            problem-solving, I thrive on crafting innovative digital
+            experiences. With a focus on clean, efficient code and a commitment
+            to collaboration, I'm excited to continue pushing boundaries and
+            making a meaningful impact in the world of web development.
           </p>
         </Reveal>
       </div>

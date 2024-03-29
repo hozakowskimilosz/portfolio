@@ -28,20 +28,17 @@ function Experience() {
                 collaborative Kanban board web application hosted on Amazon Web
                 Services (<span className="text-yellow-500">AWS</span>
                 ). This project was a joint effort involving{" "}
-                <span className=" text-green-600">three developers</span>. Our
+                <span className=" text-green-500">three developers</span>. Our
                 goal was to create a user-friendly platform for task management.
                 My role in the project encompassed various tasks, including
                 front-end development, AWS cloud management, and continous
                 deployment. We were utilizing{" "}
-                <span className="font-semibold text-primary-dark">
-                  sprint methodology
-                </span>
-                , which involved weekly presentations of technical demos and
-                daily stand-ups with our team and mentors. Through this
-                iterative approach, we were able to deliver a full-stack,
-                feature packed, Kanban board application while honing our
-                teamwork and communication skills in a real-world development
-                environment.
+                <span className="text-primary-dark">sprint methodology</span>,
+                which involved weekly presentations of technical demos and daily
+                stand-ups with our team and mentors. Through this iterative
+                approach, we were able to deliver a full-stack, feature packed,
+                Kanban board application while honing our teamwork and
+                communication skills in a real-world development environment.
               </p>
             </div>
           </div>
@@ -61,11 +58,17 @@ function Experience() {
               </div>
 
               <p className="text-sm leading-7">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos quam labore ullam nisi saepe natus molestias,
-                corrupti veniam possimus voluptas nobis eligendi! Repellat non
-                aut provident officiis iure excepturi. Tempora cupiditate optio
-                iure
+                Following my prior internship, I undertook another term at the
+                company, delving once again into the development of the same web
+                application using <span className="text-blue-500">React</span>{" "}
+                and <span className="text-primary">Redux</span>. Throughout this
+                ongoing experience, I continued to refine my skills in feature
+                enhancement and technical problem-solving while fostering
+                continued collaboration with the team. Additionally, we
+                maintained a routine of{" "}
+                <span className="text-pink-700">daily stand-up meetings</span>,
+                ensuring clear communication and alignment on project objectives
+                among team members.
               </p>
             </div>
           </div>
@@ -85,11 +88,17 @@ function Experience() {
               </div>
 
               <p className="text-sm leading-7">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos quam labore ullam nisi saepe natus molestias,
-                corrupti veniam possimus voluptas nobis eligendi! Repellat non
-                aut provident officiis iure excepturi. Tempora cupiditate optio
-                iure
+                During this internship, I was part of a team developing a
+                complex web application utilizing{" "}
+                <span className="text-blue-500">React</span> and{" "}
+                <span className="text-primary">Redux</span>. Working
+                collaboratively, I contributed to basic feature development and
+                technical problem-solving. This was my first experience in
+                professional web-development and it not only expanded my
+                proficiency in modern web development but also refined my
+                ability to work effectively within a team environment, fostering
+                enhanced communication and{" "}
+                <span className="text-orange-500">teamwork skills</span>.
               </p>
             </div>
           </div>

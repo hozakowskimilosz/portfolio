@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import Link from "./Link";
 
 interface CarouselProps {
   project: {
@@ -25,14 +26,14 @@ export default function Carousel({ project }: CarouselProps) {
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {project.map((project) => (
-          <div className="flex flex-wrap gap-4">
+          <div key={project.name} className="flex flex-wrap gap-4">
             <div className="flex flex-col gap-4 rounded-md bg-gray-100 px-7 py-4 md:w-[40rem]">
               <div className="px-8 pb-6 pt-4">
                 <div className="flex justify-between">
                   <h3 className="text-2xl">{project.name}</h3>
-                  <a href={project.repoLink} className="italic text-gray-600">
-                    LINK
-                  </a>
+                  <div>
+                    <Link to={project.repoLink}>LINK</Link>
+                  </div>
                 </div>
 
                 <p className="text-justify text-sm leading-7">
@@ -44,13 +45,16 @@ export default function Carousel({ project }: CarouselProps) {
         ))}
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+      <div className="absolute left-0 top-16 flex items-center justify-between p-4">
         <button
           onClick={prev}
           className="rounded-full bg-white/80 p-1 text-gray-800 shadow hover:bg-white"
         >
           <FaArrowLeft />
         </button>
+      </div>
+
+      <div className="absolute right-0 top-16 flex items-center justify-between p-4">
         <button
           onClick={next}
           className="rounded-full bg-white/80 p-1 text-gray-800 shadow hover:bg-white"
@@ -61,8 +65,9 @@ export default function Carousel({ project }: CarouselProps) {
 
       <div className="absolute bottom-4 left-0 right-0">
         <div className="flex items-center justify-center gap-2">
-          {project.map((_, i) => (
+          {project.map((project, i) => (
             <div
+              key={project.name}
               className={`
               h-3 w-3 rounded-full bg-primary transition-all
               ${curr === i ? "p-2" : "bg-opacity-50"}

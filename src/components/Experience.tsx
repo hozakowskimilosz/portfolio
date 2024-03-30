@@ -1,3 +1,4 @@
+import Link from "./ui/Link";
 import Reveal from "./ui/Reveal";
 
 function Experience() {
@@ -14,11 +15,7 @@ function Experience() {
               <div className="flex justify-between">
                 <div>
                   <h3 className="text-2xl">Full-Stack Developer</h3>
-                  <span className="italic text-gray-600">
-                    <a href="https://www.vml.com/pl/poland" target="blank">
-                      @VML
-                    </a>
-                  </span>
+                  <Link to="https://www.vml.com/pl/poland">@VML</Link>
                 </div>
                 <p className="text-gray-600">08.01.2024 - 02.02.2024</p>
               </div>
@@ -50,9 +47,7 @@ function Experience() {
               <div className="flex justify-between">
                 <div>
                   <h3 className="text-2xl">Front-End Developer</h3>
-                  <span className="italic text-gray-600">
-                    @Wunderman Thompson Technology
-                  </span>
+                  <Link>@Wunderman Thompson Technology</Link>
                 </div>
                 <p className="text-gray-600">04.2023 ~ 05.2023</p>
               </div>
@@ -80,9 +75,7 @@ function Experience() {
               <div className="flex justify-between">
                 <div>
                   <h3 className="text-2xl">Front-End Developer</h3>
-                  <span className="italic text-gray-600">
-                    @Wunderman Thompson Technology
-                  </span>
+                  <Link>@Wunderman Thompson Technology</Link>
                 </div>
                 <p className="text-gray-600">07.2022 ~ 08.2022</p>
               </div>

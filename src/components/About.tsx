@@ -5,6 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 import Picture from "./ui/Picture";
 import Reveal from "./ui/Reveal";
+import Link from "./ui/Link";
 
 function About() {
   const name = "Miłosz Hozakowski.";
@@ -34,15 +35,15 @@ function About() {
       <Picture />
 
       <div className="flex gap-2 rounded-full bg-gray-100 px-4 py-3 text-2xl">
-        <a href={githubLink} target="blank">
+        <Link to={githubLink}>
           <VscGithubInverted className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
-        </a>
-        <a href={linkedInLink} target="blank">
+        </Link>
+        <Link to={linkedInLink}>
           <FaLinkedin className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
-        </a>
-        <a href="mailto:mhozakowski@gmail.com">
+        </Link>
+        <Link to="mailto:mhozakowski@gmail.com">
           <SiGmail className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-col gap-4 md:w-[40rem]">

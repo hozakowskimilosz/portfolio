@@ -23,7 +23,7 @@ function Experience() {
                 <p className="text-gray-600">08.01.2024 - 02.02.2024</p>
               </div>
 
-              <p className="text-sm leading-7">
+              <p className="text-justify text-sm leading-7">
                 During this internship, I contributed to the development of a
                 collaborative Kanban board web application hosted on Amazon Web
                 Services (<span className="text-yellow-500">AWS</span>
@@ -57,7 +57,7 @@ function Experience() {
                 <p className="text-gray-600">04.2023 ~ 05.2023</p>
               </div>
 
-              <p className="text-sm leading-7">
+              <p className="text-justify text-sm leading-7">
                 Following my prior internship, I undertook another term at the
                 company, delving once again into the development of the same web
                 application using <span className="text-blue-500">React</span>{" "}
@@ -87,11 +87,10 @@ function Experience() {
                 <p className="text-gray-600">07.2022 ~ 08.2022</p>
               </div>
 
-              <p className="text-sm leading-7">
+              <p className="text-justify text-sm leading-7">
                 During this internship, I was part of a team developing a
                 complex web application utilizing{" "}
-                <span className="text-blue-500">React</span> and{" "}
-                <span className="text-primary">Redux</span>. Working
+                <span className="text-blue-500">React</span>. Working
                 collaboratively, I contributed to basic feature development and
                 technical problem-solving. This was my first experience in
                 professional web-development and it not only expanded my

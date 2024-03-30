@@ -126,7 +126,7 @@ function Skills() {
         <div className="flex flex-wrap gap-4">
           {skills.map((skill, idx) => (
             <Reveal idx={idx}>
-              <Skill>
+              <Skill key={skill.name}>
                 <p>{skill.name}</p>
                 <div>{skill.icon}</div>
               </Skill>

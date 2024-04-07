@@ -9,22 +9,21 @@ const projects = [
     repoLink: "https://github.com/hozakowskimilosz/kanban-board-team-aws",
   },
   {
-    name: "KanbanBoard AWS",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, ullam! Dolorum consequuntur quos dolores delectus aut explicabo voluptatum! Quisquam nam ipsa facilis id voluptatum ab recusandae tempore optio iure pariatur!",
-    repoLink: "https://github.com/hozakowskimilosz/kanban-board-team-aws",
+    name: "Portfolio",
+    description: "",
+    repoLink: "https://github.com/hozakowskimilosz/portfolio",
   },
   {
-    name: "KanbanBoard AWS",
+    name: "usepopcorn",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, ullam! Dolorum consequuntur quos dolores delectus aut explicabo voluptatum! Quisquam nam ipsa facilis id voluptatum ab recusandae tempore optio iure pariatur!",
-    repoLink: "https://github.com/hozakowskimilosz/kanban-board-team-aws",
+    repoLink: "https://github.com/hozakowskimilosz/usepopcorn",
   },
   {
-    name: "KanbanBoard AWS",
+    name: "Redux App",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, ullam! Dolorum consequuntur quos dolores delectus aut explicabo voluptatum! Quisquam nam ipsa facilis id voluptatum ab recusandae tempore optio iure pariatur!",
-    repoLink: "https://github.com/hozakowskimilosz/kanban-board-team-aws",
+    repoLink: "https://github.com/hozakowskimilosz/redux-app",
   },
 ];
 
@@ -38,7 +37,7 @@ function Projects() {
 
         <Reveal>
           <div className="rounded-md border-2 border-transparent transition-all hover:border-primary">
-            <Carousel project={projects} />
+            <Carousel projects={projects} />
           </div>
         </Reveal>
       </div>

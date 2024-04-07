@@ -5,13 +5,13 @@ import { SiGmail } from "react-icons/si";
 
 import Picture from "./ui/Picture";
 import Reveal from "./ui/Reveal";
-import Link from "./ui/Link";
 
 function About() {
   const name = "Miłosz Hozakowski.";
   const githubLink = "https://github.com/hozakowskimilosz";
   const linkedInLink =
     "https://www.linkedin.com/in/mi%C5%82osz-hozakowski-629442266/";
+  const mail = "mhozakowski@gmail.com";
 
   return (
     <div
@@ -35,15 +35,15 @@ function About() {
       <Picture />
 
       <div className="flex gap-2 rounded-full bg-gray-100 px-4 py-3 text-2xl">
-        <Link to={githubLink}>
+        <a href={githubLink} target="blank">
           <VscGithubInverted className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
-        </Link>
-        <Link to={linkedInLink}>
+        </a>
+        <a href={linkedInLink}>
           <FaLinkedin className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
-        </Link>
-        <Link to="mailto:mhozakowski@gmail.com">
+        </a>
+        <a href={mail}>
           <SiGmail className="cursor-pointer text-gray-400 transition-colors duration-150 hover:text-gray-900" />
-        </Link>
+        </a>
       </div>
 
       <div className="flex flex-col gap-4 md:w-[40rem]">
@@ -52,7 +52,7 @@ function About() {
         </h2>
 
         <Reveal>
-          <p className="rounded-md border-2 border-transparent bg-gray-100 px-7 py-4 text-justify font-light transition-all hover:border-primary md:w-[40rem]">
+          <p className="rounded-md border-2 border-transparent bg-gray-100 px-7 py-4 text-justify font-light leading-7 transition-all hover:border-primary md:w-[40rem]">
             Welcome! I'm Miłosz Hozakowski, a web developer, currently on the
             verge of completing my programming technician degree at Zespół Szkół
             Łączności in Poznań. Fueled by curiosity and a passion for
